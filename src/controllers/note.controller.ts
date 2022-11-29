@@ -5,6 +5,7 @@ import type {
   UpdateNoteInput,
 } from "../schema/note.schema.ts";
 
+// [...] CREATE Route Middleware
 const createNoteController = async ({
   request,
   response,
@@ -51,6 +52,7 @@ const createNoteController = async ({
   }
 };
 
+// [...] UPDATE Route Middleware
 const updateNoteController = async ({
   params,
   request,
@@ -89,6 +91,7 @@ const updateNoteController = async ({
   }
 };
 
+// [...] Single READ Route Middleware
 const findNoteController = async ({
   params,
   response,
@@ -117,6 +120,7 @@ const findNoteController = async ({
   }
 };
 
+// [...] Multiple READ Route Middleware
 const findAllNotesController = async ({
   request,
   response,
@@ -143,6 +147,7 @@ const findAllNotesController = async ({
   }
 };
 
+// [...] DELETE Route Middleware
 const deleteNoteController = async ({
   params,
   response,
